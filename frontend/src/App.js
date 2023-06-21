@@ -5,6 +5,7 @@ import Home from "./pages/Home/Home";
 import Navigation from "./components/shared/Navigation/Navigation";
 import Register from "./pages/Register/Register";
 import Login from "./pages/Login/Login";
+import Authenticate from "./pages/Authenticate/Authenticate";
 
 function App() {
     return (
@@ -15,13 +16,17 @@ function App() {
                     <Home />
                 </Route>
 
-                <Route path="/register">
+                <Route path="/Authenticate">
+                    <Authenticate />
+                </Route>
+
+                {/* <Route path="/register">
                     <Register />
                 </Route>
 
                 <Route path="/login">
                     <Login />
-                </Route>
+                </Route> */}
             </Switch>
         </BrowserRouter>
     );
